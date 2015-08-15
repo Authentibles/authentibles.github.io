@@ -25,9 +25,7 @@ try
 {
   using (var tx = new ESENT.Transaction(table.Session))
   {
-    ESENT.Api.JetSetSessionContext(
-      table.Session,
-      table.Context);
+    ESENT.Api.JetSetSessionContext(table.Session, table.Context);
     var result = table.Get(key);
     tx.Commit(ESENT.CommitTransactionGrbit.None);
     return result;
