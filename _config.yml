@@ -51,7 +51,7 @@ baseurl: ""
 
 #fenced_code_blocks: true
 
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
