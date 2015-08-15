@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Fabric Transactional Replicator
-date: {}
-categories: csharp fabirc
+date: 2015-08-15T12:00:00.000Z
+categories: csharp fabric
 published: false
 ---
 
