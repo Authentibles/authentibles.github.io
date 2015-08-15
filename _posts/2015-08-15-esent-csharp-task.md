@@ -26,9 +26,7 @@ try
 {
     using (var tx = new ESENT.Transaction(table.Session))
     {
-        // Set the session context.
         ESENT.Api.JetSetSessionContext(table.Session, table.Context);
-        // This just calls the appropriate ESENT APIs.
         var result = table.Get(key);
         tx.Commit(ESENT.CommitTransactionGrbit.None);
         return result;
@@ -36,7 +34,6 @@ try
 }
 finally
 {
-    // Reset the session context.
     ESENT.Api.JetResetSessionContext(table.Session);
 }
 ```
