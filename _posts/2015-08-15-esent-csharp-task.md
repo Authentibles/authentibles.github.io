@@ -6,8 +6,6 @@ date: 2015-08-15T12:00:00.000Z
 categories: csharp tasks esent managedesent
 ---
 
-
-
 Recently I've been playing around with [ESENT](https://en.wikipedia.org/wiki/Extensible_Storage_Engine) via [ManagedEsent](https://managedesent.codeplex.com/).
 ESENT is an embedded database which comes with every version of Windows and is the basis of Active Directory, Exchange, and a bunch more.
 
@@ -21,7 +19,7 @@ Using it is fairly straight forwards:
 
 Example:
 
-``` c#
+```c#
 try
 {
     using (var tx = new ESENT.Transaction(table.Session))
