@@ -16,6 +16,7 @@ ESENT tries to protect developers from multi-threaded access to a session by loc
 Thankfully, ESENT gives us an out: you can opt-out of the per-thread protection and instead specify your own context object which must be set when a `Session` is accessed from a given thread.
 
 Using it is fairly straight forwards:
+
 * Before calling ESENT, set the session context using [JetSetSessionContext](https://msdn.microsoft.com/en-us/library/microsoft.isam.esent.interop.api.jetsetsessioncontext.aspx).
 * When you're done, reset the session context using [JetResetSessionContext](https://msdn.microsoft.com/en-us/library/microsoft.isam.esent.interop.api.jetresetsessioncontext.aspx).
 
