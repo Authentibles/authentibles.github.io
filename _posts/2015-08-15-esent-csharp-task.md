@@ -1,8 +1,8 @@
 ---
 published: true
 layout: post
-title: "ManagedEsent and C# Tasks"
-date: {}
+title: ManagedEsent and C# Tasks
+date: 2015-08-15T12:00:00.000Z
 categories: csharp tasks esent managedesent
 ---
 
@@ -25,7 +25,9 @@ try
 {
   using (var tx = new ESENT.Transaction(table.Session))
   {
-    ESENT.Api.JetSetSessionContext(table.Session, table.Context);
+    ESENT.Api.JetSetSessionContext(
+      table.Session,
+      table.Context);
     var result = table.Get(key);
     tx.Commit(ESENT.CommitTransactionGrbit.None);
     return result;
