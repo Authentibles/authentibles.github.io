@@ -6,9 +6,6 @@ date:   2015-08-15 11:23:32
 categories: csharp tasks esent managedesent
 ---
 
-
-## Quick Tip: Using ManagedEsent with C# Tasks
-
 Recently I've been playing around with [ESENT](https://en.wikipedia.org/wiki/Extensible_Storage_Engine) via [ManagedEsent](https://managedesent.codeplex.com/).
 ESENT is an embedded database which comes with every version of Windows and is the basis of Active Directory, Exchange, and a bunch more.
 
