@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 ## Quick Tip: Using ManagedEsent with C# Tasks
 
