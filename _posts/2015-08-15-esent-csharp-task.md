@@ -21,7 +21,7 @@ Using it is fairly straight forwards:
 
 Example:
 
-```ruby
+```c#
 try
 {
     using (var tx = new ESENT.Transaction(table.Session))
