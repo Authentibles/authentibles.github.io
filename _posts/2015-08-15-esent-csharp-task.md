@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+title:  “Using ManagedEsent with C# Tasks"
+date:   2015-08-15 11:23:32
+categories: csharp tasks esent managedesent
 ---
 
 
