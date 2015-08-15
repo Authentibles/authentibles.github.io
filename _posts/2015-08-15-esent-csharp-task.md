@@ -20,6 +20,7 @@ Using it is fairly straight forwards:
 * When you're done, reset the session context using [JetResetSessionContext](https://msdn.microsoft.com/en-us/library/microsoft.isam.esent.interop.api.jetresetsessioncontext.aspx).
 
 Example:
+
 ```ruby
 try
 {
