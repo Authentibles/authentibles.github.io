@@ -1,10 +1,11 @@
 ---
 published: true
 layout: post
-title:  ManagedEsent and C# Tasks
-date:   2015-08-15 11:23:32
+title: "ManagedEsent and C# Tasks"
+date: {}
 categories: csharp tasks esent managedesent
 ---
+
 
 Recently I've been playing around with [ESENT](https://en.wikipedia.org/wiki/Extensible_Storage_Engine) via [ManagedEsent](https://managedesent.codeplex.com/).
 ESENT is an embedded database which comes with every version of Windows and is the basis of Active Directory, Exchange, and a bunch more.
@@ -14,6 +15,7 @@ ESENT tries to protect developers from multi-threaded access to a session by loc
 Thankfully, ESENT gives us an out: you can opt-out of the per-thread protection and instead specify your own context object which must be set when a `Session` is accessed from a given thread.
 
 Using it is fairly straight forwards:
+
 * Before calling ESENT, set the session context using [`JetSetSessionContext`](https://msdn.microsoft.com/en-us/library/microsoft.isam.esent.interop.api.jetsetsessioncontext.aspx).
 * When you're done, reset the session context using [`JetResetSessionContext`](https://msdn.microsoft.com/en-us/library/microsoft.isam.esent.interop.api.jetresetsessioncontext.aspx).
 
