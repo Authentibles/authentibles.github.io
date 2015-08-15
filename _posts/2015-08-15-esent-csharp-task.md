@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: "ManagedEsent and C# Tasks"
-date: 2015-08-15T12:00:00.000Z
+date: 2015-08-15T13:00:00.000Z
 categories: csharp tasks esent managedesent
 ---
 
