@@ -8,7 +8,6 @@ categories: csharp fabric
 
 
 ## Fixing Broken Azure Web Apps Diagnostics
-
 Recently, Streaming Logs for an Azure Web App of mine broke. I was seeing the following when connecting to Streaming Logs:
 ```
 <!-- 
