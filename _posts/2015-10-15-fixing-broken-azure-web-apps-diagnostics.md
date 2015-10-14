@@ -7,7 +7,6 @@ categories: csharp fabric
 
 Recently, Streaming Logs for an Azure Web App of mine broke. I was seeing the following when connecting to Streaming Logs:
 ```
-<!-- 
 [JsonReaderException: Error reading JObject from JsonReader. Path '', line 0, position 0.]
 ```
 
