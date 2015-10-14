@@ -31,6 +31,7 @@ del ..\diagnostics\settings.json
 Hope this helps someone!
 
 Here's the stack trace of the error:
+
 ```
 [JsonReaderException: Error reading JObject from JsonReader. Path &#39;&#39;, line 0, position 0.]
    Newtonsoft.Json.Linq.JObject.Load(JsonReader reader) +406
