@@ -1,9 +1,10 @@
 ---
 published: true
 layout: post
-date: 2015-08-15T12:00:00.000Z
+date: {}
 categories: csharp fabric
 ---
+
 
 
 ## Fixing Broken Azure Web Apps Diagnostics
@@ -17,6 +18,8 @@ Recently, Streaming Logs for an Azure Web App of mine broke. I was seeing the fo
 The solution was to delete `diagnostics\settings.json` which had somehow become an empty file.
 
 In Visual Studio, open Server Explorer, expand `Files` in your Web App, expand `diagnostics`, and delete `settings.json`.
+
+![Delete the file from Server Explorer](https://raw.githubusercontent.com/Authentibles/authentibles.github.io/master/images/easy-way.png)
 
 Problem solved.
 
