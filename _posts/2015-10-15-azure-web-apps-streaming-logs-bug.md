@@ -6,6 +6,25 @@ published: false
 
 Recently, Streaming Logs for an Azure Web App of mine broke. I was seeing the following when connecting to Streaming Logs:
 ```
+<!-- 
+[JsonReaderException: Error reading JObject from JsonReader. Path '', line 0, position 0.]
+```
+
+The solution was to delete `diagnostics\settings.json` which had somehow become an empty file.
+
+In Visual Studio, open Server Explorer, expand `Files` in your Web App, expand `diagnostics`, and delete `settings.json`.
+
+Problem solved.
+
+Alternatively, you can open the Azure Portal, navigate to your Web App, click Tools > Console and type the following:
+```
+del ..\diagnostics\settings.json
+```
+
+Hope this helps someone!
+
+Here's the full text of the error:
+```
 Connecting to Application logs ...
 2015-10-14T22:05:49  Welcome, you are now connected to log-streaming service.
 Application: <!DOCTYPE html>
@@ -117,12 +136,4 @@ Application:    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, B
 Application: --><!-- 
 Application: This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.-->
 Disconnected from Application logs
-```
-
-The solution was to delete `diagnostics\settings.json` which had somehow become an empty file.
-
-In the Azure portal, navigate to your web site
-
-```
-del ..\diagnostics\settings.json
 ```
