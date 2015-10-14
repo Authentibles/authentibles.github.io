@@ -23,11 +23,15 @@ In Visual Studio, open Server Explorer, expand `Files` in your Web App, expand `
 
 Problem solved.
 
-Alternatively, you can open the Azure Portal, navigate to your Web App, click Tools > Console and type the following:
+Alternatively, you can open the Azure Portal, navigate to your Web App, click `Tools`
+
+![Click Tools](https://raw.githubusercontent.com/Authentibles/authentibles.github.io/master/images/click-tools.png)
+ 
+Click `Console` and type the following:
 ```
 del ..\diagnostics\settings.json
 ```
-
+![Delete settings.json](https://raw.githubusercontent.com/Authentibles/authentibles.github.io/master/images/delete-settings.png)
 Hope this helps someone!
 
 Here's the full text of the error:
